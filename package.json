@@ -1,0 +1,25 @@
+{
+  "author": "Gerald",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gerald-coder/Node_Course/issues"
+  },
+  "homepage": "https://github.com/Gerald-coder/Node_Course#readme",
+  "name": "gerry_node",
+  "version": "1.0.0",
+  "description": "learning node for the first time",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gerald-coder/Node_Course.git"
+  }
+}
