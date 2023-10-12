@@ -15,9 +15,10 @@
     "dev": "nodemon server"
   },
   "dependencies": {
-    "date-fns": "^2.30.0"
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
+    "uuid": "^9.0.1"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gerald-coder/Node_Course.git"

@@ -1,0 +1,5 @@
+[
+  { "nsme": "Gerald", "age": 22, "married": false },
+  { "nsme": "Gerald", "age": 22 },
+  { "nsme": "Gerald", "age": 23 }
+]
