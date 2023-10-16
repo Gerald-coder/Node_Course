@@ -8,13 +8,24 @@ const { format } = require("date-fns");
 const logEvents = async (msg, logName) => {
   const dateTime = `${format(new Date(), "yyyy/MM/dd")}`;
   const logItem = `${dateTime}\t ${uuid()} \t ${msg} \n`;
-  console.log(logItem);
+  // console.log(logItem); //
   try {
-    if (!fs.existsSync("./logs")) await fsPromises.mkdir("./logs");
-    await fsPromises.appendFile(path.join(__dirname, "logs", logName), logItem);
+    if (!fs.existsSync(path.join(__dirname, "..", "logs"))) {
+      await fsPromises.mkdir(path.join(__dirname, "..", "logs"));
+    }
+    await fsPromises.appendFile(
+      path.join(__dirname, "..", "logs", logName),
+      logItem
+    );
   } catch (error) {
     throw error;
   }
+};
+
+const logger = (req, res, next) => {
+  console.log(req.url, req.method);
+  logEvents(`${req.url} \t ${req.method} ${req.headers.origin}`, "reqLog.txt");
+  next();
 };
 
 process.on("uncaughtException", (err) => {
@@ -22,4 +33,4 @@ process.on("uncaughtException", (err) => {
   process.exit();
 });
 
-module.exports = logEvents;
+module.exports = { logger, logEvents };

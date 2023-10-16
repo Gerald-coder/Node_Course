@@ -3,62 +3,99 @@ const app = express();
 require("dotenv").config();
 const PORT = process.env.PORT || 3100;
 const path = require("path");
+const fsPromises = require("fs").promises;
+const { logger } = require("./middleware/logEvent");
+const cors = require("cors");
+const errorHander = require("./middleware/errorLog");
 
-app.get("^/$|index(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "index.html"));
-});
+// custom middleware
+app.use(logger);
 
-app.get("/newPage(.html)?", (req, res) => {
-  // res.sendFile("./views/newPage.html", { root: __dirname });
-  res.sendFile(path.join(__dirname, "views", "newPage.html"));
-});
+// CROSS ORIGIN RESOURCE SHARING
 
-app.get("/old-page(.html)?", (req, res) => {
-  res.redirect(301, "newPage.html");
-});
+const whiteList = [
+  "www.mysite.com",
+  "http://localhost:3400",
+  "http://localhost:5173",
+  "http://127.0.0.1:5500",
+  "https://www.google.com",
+];
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (whiteList.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("gerry, there is a cors error"));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
+
+// built in middleware
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.static(path.join(__dirname, "/public")));
+app.use("/subdir", express.static(path.join(__dirname, "/public")));
+
+// routers
+app.use("/", require("./routes/root"));
+app.use("/subdir", require("./routes/subdir"));
+app.use("/employees", require("./routes/api/employees"));
 
 // app.get(/a/, (req, res) => {
 //   res.sendFile("Any.html");
 // });
 
 // ROUTE HANDLERS
-app.get(
-  "/example(.html)?",
-  (req, res, next) => {
-    console.log("this is a handle with the next"); //
-    next();
-  },
-  (req, res) => {
-    res.send("this is an example");
-    console.log("success with the example"); //
+// app.get(
+//   "/example(.html)?",
+//   (req, res, next) => {
+//     console.log("this is a handle with the next"); //
+//     next();
+//   },
+//   (req, res) => {
+//     res.send("this is an example");
+//     console.log("success with the example"); //
+//   }
+// );
+
+// // CHAINING HANDLERS
+// const one = (req, res, next) => {
+//   console.log("first");
+//   next();
+// };
+// const two = (req, res, next) => {
+//   console.log("two");
+//   next();
+// };
+// const three = (req, res, next) => {
+//   console.log("three");
+//   res.send("this is a trial on the combination of array and function ❤❤");
+// };
+
+// app.get(
+//   "/chain(.html)?",
+//   (req, res, next) => {
+//     console.log("we tried  a marginary fourth one ");
+//     next();
+//   },
+//   [one, two, three]
+// );
+
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  } else if (req.accepts("json")) {
+    res.json({ error: "gerry, 404 not found json" });
+  } else {
+    res.type("txt").send("404 on txt not found");
   }
-);
-
-// CHAINING HANDLERS
-const one = (req, res, next) => {
-  console.log("first");
-  next();
-};
-const two = (req, res, next) => {
-  console.log("two");
-  next();
-};
-const three = (req, res, next) => {
-  console.log("three");
-  res.send("this is a trial on the combination of array and function ❤❤");
-};
-
-app.get(
-  "/chain(.html)?",
-  (req, res, next) => {
-    console.log("we tried  a marginary fourth one ");
-    next();
-  },
-  [one, two, three]
-);
-
-app.get("/*", (req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
 });
+
+app.use(errorHander);
 
 app.listen(PORT, () => console.log(`listening to PORT ${PORT}`));

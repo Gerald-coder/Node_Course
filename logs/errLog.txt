@@ -1,2 +1,4 @@
 2023/10/12	 50e7c5b7-0595-4187-a1ec-f3262f34ff8e 	 response error TypeError	fsPromises.reaFile is not a function 
 2023/10/12	 62f560a2-5c61-4b36-865f-cbebb083c996 	 response error TypeError:fsPromises.redFile is not a function 
+2023/10/15	 18187478-c630-4149-8f6e-9e80653b1b6f 	 Error: gerry, there is a cors error 
+2023/10/16	 c018ae2b-440a-4942-bede-0536ae53b781 	 Error: gerry, there is a cors error 

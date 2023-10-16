@@ -1,4 +1,4 @@
-2023/10/12	 4017362a-31d6-4b6e-8ef1-ac45cdc55f3d 	 /newPage.html	GET 
+ 2023/10/12	 4017362a-31d6-4b6e-8ef1-ac45cdc55f3d 	 /newPage.html	GET 
 2023/10/12	 dead4b55-de84-40bd-8b79-3a1fed502db1 	 /css/style.css	GET 
 2023/10/12	 a9746dd5-eba0-44b8-8312-311713af6efb 	 /img/img1.jpg	GET 
 2023/10/12	 53cfc100-42d3-485a-bc32-abe287b6762c 	 /newPage.html	GET 
@@ -14,3 +14,76 @@
 2023/10/12	 3f355ec1-7166-4c92-a4b7-cf4b135cade2 	 /css/style.css	GET 
 2023/10/12	 3c7f5c73-5091-4385-9c56-87a5e84eda43 	 /newP	GET 
 2023/10/12	 49592242-bc78-4f9a-8ac5-1655035fba10 	 /css/style.css	GET 
+2023/10/13	 25c42cf6-4c09-4e0c-9f46-1a686e96329c 	 / 	 GET undefined 
+2023/10/13	 efa12a38-1452-4bdf-a33c-768a571cd800 	 /css/style.css 	 GET undefined 
+2023/10/13	 49de4dde-5ef7-4ede-82d7-ba726bcc5176 	 /newPage.html 	 GET undefined 
+2023/10/13	 d8341217-2d54-45ab-96c0-fac20ced2fa2 	 /css/style.css 	 GET undefined 
+2023/10/13	 d5563400-1059-4f11-bdae-7bdadd8e9fd4 	 /img/img1.jpg 	 GET undefined 
+2023/10/13	 f17e6c67-680b-4dd5-8413-9d0a3d624463 	 /jok 	 GET undefined 
+2023/10/13	 173eca9f-34f3-4712-9d32-ac969642c462 	 /css/style.css 	 GET undefined 
+2023/10/13	 f5cf7968-9eaa-44ce-9839-2710a1d5ff49 	 / 	 OPTIONS https://www.google.com 
+2023/10/13	 add90b62-67be-4534-abca-5f3b25c6176d 	 / 	 GET https://www.google.com 
+2023/10/13	 0df2ad62-cc09-498a-8f8d-f1f0f2dddee8 	 / 	 OPTIONS https://www.google.com 
+2023/10/13	 194f3553-f95b-4a51-9bd3-bc9d61f339ae 	 / 	 GET https://www.google.com 
+2023/10/15	 d4a694b6-8603-41a8-9918-039ecf1d1224 	 / 	 OPTIONS https://www.google.com 
+2023/10/15	 d6ee010f-352c-4998-9c74-d62a7bd49fd0 	 / 	 GET https://www.google.com 
+2023/10/15	 3dbb1cb8-db3b-45d9-92f3-edd34e3e3ef1 	 / 	 OPTIONS https://www.google.com 
+2023/10/15	 1f385b5a-6c24-4e65-ae32-ee066d6198b7 	 / 	 GET https://www.google.com 
+2023/10/15	 e2b10966-cff6-4a3d-ab59-85006f87aa76 	 / 	 OPTIONS https://www.google.com 
+2023/10/15	 fc3d032c-751a-4821-9e8f-f837534c4b82 	 / 	 GET https://www.google.com 
+2023/10/15	 642e38bd-1d61-4c73-bff4-5de11c443059 	 / 	 OPTIONS https://www.google.com 
+2023/10/15	 775f3aab-3a82-4e57-ae6f-661a5c201131 	 / 	 GET https://www.google.com 
+2023/10/15	 17159663-9b8e-46fc-acd4-5c4c132e89d3 	 / 	 OPTIONS https://www.google.com 
+2023/10/15	 10b775c1-bb17-4978-a0dd-1801b429369a 	 / 	 GET https://www.google.com 
+2023/10/15	 76fc0e2e-024f-4ae7-91d2-2300fcd50c7e 	 /data/data.txt 	 GET undefined 
+2023/10/15	 ce2b8120-1f78-4967-8cbe-2479b6055196 	 /data/data.txt 	 GET undefined 
+2023/10/15	 a4d177f1-4b41-4e67-91ed-f005464a53d5 	 /data/css/style.css 	 GET undefined 
+2023/10/15	 8fc86a86-fbc7-4a47-a8ce-7327c541dce8 	 /data/data.txt 	 GET undefined 
+2023/10/15	 02e2f933-7767-4b3b-a100-da272f1492b6 	 /data/css/style.css 	 GET undefined 
+2023/10/15	 7988d297-f443-41ff-99da-53810092103a 	 / 	 GET undefined 
+2023/10/15	 785f377b-1bae-4b2c-91c4-ac3ed23e08f2 	 /css/style.css 	 GET undefined 
+2023/10/15	 421f229b-7be1-481e-9684-171e0b7c5a72 	 / 	 GET undefined 
+2023/10/15	 132aa82b-5fc8-4f83-a38c-a95c13f20c4d 	 /css/style.css 	 GET undefined 
+2023/10/15	 f70d2479-1b1e-457d-b777-7240f6e7c595 	 /sd 	 GET undefined 
+2023/10/15	 55f31364-f6bd-45b1-a4be-d82433bedbf5 	 /css/style.css 	 GET undefined 
+2023/10/15	 aa836cf9-4e9c-471c-aa20-3b1c3dc24061 	 /sd 	 GET undefined 
+2023/10/15	 eb594a30-77c3-41d2-a72f-3adae939de90 	 /sd 	 GET undefined 
+2023/10/16	 115a67ff-40f6-4f14-ba5f-cbb898e01e35 	 /sd 	 GET undefined 
+2023/10/16	 3113ec22-63a6-48a5-8f8c-c50dd93f9ab6 	 /sd 	 GET undefined 
+2023/10/16	 f6588451-eea9-44dc-b32d-8d39b90e0752 	 /css/style.css 	 GET undefined 
+2023/10/16	 92874f46-71ce-4110-b174-c866167b9e19 	 /jok 	 GET undefined 
+2023/10/16	 d744a911-f194-4824-8e7a-5c7712cb88d2 	 /css/style.css 	 GET undefined 
+2023/10/16	 44a4e767-f620-4ef7-b56c-85f31a8f86ba 	 /jo 	 GET undefined 
+2023/10/16	 46df9eb1-44e1-4c44-a635-67343e589e94 	 /css/style.css 	 GET undefined 
+2023/10/16	 03f69a96-aa76-4be4-8b6a-a9eecff97799 	 / 	 GET undefined 
+2023/10/16	 61b578ec-b599-4cdc-96fb-f03c2247c3a3 	 /css/style.css 	 GET undefined 
+2023/10/16	 3dd486d3-0e1a-49c5-9b61-0a1a795149ef 	 /wswj 	 GET undefined 
+2023/10/16	 ff39fd44-ea5f-492c-89d9-8def7f18d680 	 /css/style.css 	 GET undefined 
+2023/10/16	 f4124b55-0601-43d5-9d1f-c9522a5cf905 	 /subdir/test 	 GET undefined 
+2023/10/16	 9c571032-6828-4a30-9085-37684daf0aeb 	 /css/style.css 	 GET undefined 
+2023/10/16	 b617cccd-0846-4736-a02e-5ad9fc06b9c9 	 /subdir/te 	 GET undefined 
+2023/10/16	 b3575a5f-cc1e-493e-865a-1fd6c1120abe 	 /subdir/css/style.css 	 GET undefined 
+2023/10/16	 7f395934-791b-4c54-8862-9b00b75c0fb0 	 /sub 	 GET undefined 
+2023/10/16	 3e4dc9f9-2c22-4866-af47-6f936c6ab59d 	 /css/style.css 	 GET undefined 
+2023/10/16	 276f5aa7-0b16-4d72-8c0e-4d5733acd76e 	 /sub 	 GET undefined 
+2023/10/16	 b1894382-92f4-4e1f-bd79-e036e5429d67 	 /css/style.css 	 GET undefined 
+2023/10/16	 103ade0e-4be5-4591-9526-70d8f8b6296f 	 /subdir/te 	 GET undefined 
+2023/10/16	 31b17caf-26df-432d-bbb1-d3b39d671a2c 	 /subdir/css/style.css 	 GET undefined 
+2023/10/16	 a2b56104-9890-448f-9368-da012089ff4a 	 / 	 GET undefined 
+2023/10/16	 3d704255-5a83-4d50-934f-6e9a47d71dba 	 /css/style.css 	 GET undefined 
+2023/10/16	 83d5076b-3dda-4330-bf6c-d05ed97d3b6d 	 /newPage.html 	 GET undefined 
+2023/10/16	 4b7fb1e9-34c4-4021-b8c7-c54c25f8602d 	 /css/style.css 	 GET undefined 
+2023/10/16	 ab8385e6-abb0-42d7-9274-36516072978b 	 /newPage.html 	 GET undefined 
+2023/10/16	 db1e32f3-7cc4-420a-adfb-0506d0130a93 	 /css/style.css 	 GET undefined 
+2023/10/16	 fbc7e774-3a8c-45c4-a7d0-49239a81754f 	 /img/img1.jpg 	 GET undefined 
+2023/10/16	 719c00a4-8e0f-4cfe-9b24-bf6ceb760a0f 	 /newPage.html 	 GET undefined 
+2023/10/16	 be4986ee-f2b8-467a-9ab0-9446120bc95d 	 /css/style.css 	 GET undefined 
+2023/10/16	 effe8bdf-33b5-4e50-a9d5-73b80e130ba9 	 /img/img1.jpg 	 GET undefined 
+2023/10/16	 592c6f22-747f-4eed-9eb1-d0f920a68738 	 /newPage.html 	 GET undefined 
+2023/10/16	 b538ffa5-d055-47d3-982a-697a501210eb 	 /css/style.css 	 GET undefined 
+2023/10/16	 b4338e2a-2785-466c-89ed-72d450c0c85d 	 /img/img1.jpg 	 GET undefined 
+2023/10/16	 de78994b-64cc-4690-b021-141424d8978a 	 /newPage.ht 	 GET undefined 
+2023/10/16	 2450be0d-86fe-4510-85e4-a3ee24dcc8e8 	 /css/style.css 	 GET undefined 
+2023/10/16	 9baecf0e-f061-4bac-ac21-826f8e8e76ec 	 /newPage.html 	 GET undefined 
+2023/10/16	 e63644af-f7f5-4c8e-aa7f-9211fb2cd065 	 /css/style.css 	 GET undefined 
+2023/10/16	 8431035f-d327-41b0-a150-473c940eeb81 	 /img/img1.jpg 	 GET undefined 
