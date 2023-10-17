@@ -2,3 +2,30 @@
 2023/10/12	 62f560a2-5c61-4b36-865f-cbebb083c996 	 response error TypeError:fsPromises.redFile is not a function 
 2023/10/15	 18187478-c630-4149-8f6e-9e80653b1b6f 	 Error: gerry, there is a cors error 
 2023/10/16	 c018ae2b-440a-4942-bede-0536ae53b781 	 Error: gerry, there is a cors error 
+2023/10/17	 7d9ffc00-41e7-4cf3-bd84-83f515872037 	 TypeError: req.json is not a function 
+2023/10/17	 b719ad4d-a41a-4051-b4d6-349e2ab9b86f 	 TypeError: Cannot read properties of undefined (reading 'id') 
+2023/10/17	 2cc853c3-17f7-4597-9c6d-7653c9a6a583 	 SyntaxError: Unexpected token } in JSON at position 69 
+2023/10/17	 641fa73c-18a9-4c02-ac46-5bb956bbd8e1 	 SyntaxError: Unexpected token } in JSON at position 64 
+2023/10/17	 8dbac3de-0455-41f2-9449-95087e764392 	 SyntaxError: Unexpected token } in JSON at position 64 
+2023/10/17	 e883ef2b-9783-4f0e-864a-902cc5886ac1 	 SyntaxError: Unexpected token } in JSON at position 64 
+2023/10/17	 a744416d-276b-4e3c-800a-fe026cf9fdc5 	 SyntaxError: Unexpected token } in JSON at position 64 
+2023/10/17	 17703623-60c2-4847-b47f-61511c504666 	 SyntaxError: Unexpected token } in JSON at position 64 
+2023/10/17	 35f88e43-46b1-460d-a15d-db7b2dbf2e2e 	 SyntaxError: Unexpected token } in JSON at position 64 
+2023/10/17	 8568faa5-f681-428c-8a21-78591f1e7792 	 TypeError: Cannot read properties of undefined (reading 'id') 
+2023/10/17	 eb8a8d6d-8b81-4517-9b45-abf0e9af6980 	 ReferenceError: data is not defined 
+2023/10/17	 a1b82c99-15ee-4066-82b5-762a56fb044a 	 Error: Cannot set headers after they are sent to the client 
+2023/10/17	 ffd29769-10ce-4098-9618-b2f5ab55fc79 	 Error: Cannot set headers after they are sent to the client 
+2023/10/17	 921c9126-41ba-4e16-a6ff-8e932acca492 	 Error: Cannot set headers after they are sent to the client 
+2023/10/17	 30a06dc3-62ce-4ccf-a61e-93177b486454 	 Error: Cannot set headers after they are sent to the client 
+2023/10/17	 15bb11f3-b353-4b0c-b468-48aff16ec594 	 Error: Cannot set headers after they are sent to the client 
+2023/10/17	 cb2b8d2e-fda4-45fe-a534-f09da1e38732 	 Error: Cannot set headers after they are sent to the client 
+2023/10/17	 222f7f4b-daca-4d1b-96f0-b9f8553f6571 	 Error: Cannot set headers after they are sent to the client 
+2023/10/17	 44cf5d15-8d75-45c7-9a1a-e0b813e2bb8b 	 Error: Cannot set headers after they are sent to the client 
+2023/10/17	 6689d72d-1ebc-49d1-9150-202a31159b8a 	 Error: Cannot set headers after they are sent to the client 
+2023/10/17	 8fbaff7c-87c0-45bf-b5ef-2beeef494c61 	 Error: Cannot set headers after they are sent to the client 
+2023/10/17	 13df3067-5304-4dcd-ae3e-198afa3d331c 	 Error: Cannot set headers after they are sent to the client 
+2023/10/17	 ab1fbe32-0555-4d6f-90a5-fa575dac8313 	 Error: Cannot set headers after they are sent to the client 
+2023/10/17	 f3b723e4-23c2-4234-8b7b-75f0fd17f119 	 TypeError: Cannot read properties of undefined (reading 'firstname') 
+2023/10/17	 a592ccf8-1da6-4efc-a62d-79214aa50666 	 TypeError: Cannot read properties of undefined (reading 'firstname') 
+2023/10/17	 a5fdf56b-2f3a-4d8d-857b-9bc33de9eec0 	 Error: Cannot set headers after they are sent to the client 
+2023/10/17	 ac34117b-6eef-41a9-bcf8-31cbe8c5710a 	 TypeError: Cannot set properties of undefined (setting 'lastname') 

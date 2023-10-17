@@ -7,30 +7,12 @@ const fsPromises = require("fs").promises;
 const { logger } = require("./middleware/logEvent");
 const cors = require("cors");
 const errorHander = require("./middleware/errorLog");
+const corsOptions = require("./config/corOption");
 
 // custom middleware
 app.use(logger);
 
 // CROSS ORIGIN RESOURCE SHARING
-
-const whiteList = [
-  "www.mysite.com",
-  "http://localhost:3400",
-  "http://localhost:5173",
-  "http://127.0.0.1:5500",
-  "https://www.google.com",
-];
-
-const corsOptions = {
-  origin: (origin, callback) => {
-    if (whiteList.indexOf(origin) !== -1 || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error("gerry, there is a cors error"));
-    }
-  },
-  optionsSuccessStatus: 200,
-};
 
 app.use(cors(corsOptions));
 
@@ -44,6 +26,7 @@ app.use("/subdir", express.static(path.join(__dirname, "/public")));
 app.use("/", require("./routes/root"));
 app.use("/subdir", require("./routes/subdir"));
 app.use("/employees", require("./routes/api/employees"));
+app.use("/users", require("./routes/api/Users"));
 
 // app.get(/a/, (req, res) => {
 //   res.sendFile("Any.html");
