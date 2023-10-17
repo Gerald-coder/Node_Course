@@ -26,7 +26,8 @@ app.use("/subdir", express.static(path.join(__dirname, "/public")));
 app.use("/", require("./routes/root"));
 app.use("/subdir", require("./routes/subdir"));
 app.use("/employees", require("./routes/api/employees"));
-app.use("/users", require("./routes/api/Users"));
+app.use("/users", require("./routes/Users"));
+app.use("/login", require("./routes/auth"));
 
 // app.get(/a/, (req, res) => {
 //   res.sendFile("Any.html");

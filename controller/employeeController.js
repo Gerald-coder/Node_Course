@@ -10,7 +10,7 @@ const getAllEmployees = (req, res) => {
 };
 
 const RegisterNewEmployee = (req, res) => {
-  const { firstname, lastname, married } = req.body;
+  const { firstname, lastname } = req.body;
   if (!firstname || !lastname) {
     res.status(403).json({ message: "required user details" });
   }
