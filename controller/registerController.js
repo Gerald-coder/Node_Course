@@ -24,6 +24,7 @@ const registerNewUser = async (req, res) => {
       path.join(__dirname, "..", "model", "users.json"),
       JSON.stringify(usersDB.users)
     );
+    console.log(`we have ${usersDB.users.length} number of active users now`);
     res.status(201).json({ success: `new user ${user} created` });
   } catch (error) {
     res.status(500).json({ message: error.message });

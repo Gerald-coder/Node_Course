@@ -7,6 +7,8 @@ const usersDB = {
 const path = require("path");
 const fsPromises = require("fs").promises;
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
 
 const handleLogin = async (req, res) => {
   const { user, pwd } = req.body;
@@ -21,7 +23,35 @@ const handleLogin = async (req, res) => {
   const match = await bcrypt.compare(pwd, foundUser.password);
   if (match) {
     // create jwt
-    return res.json({ message: `user ${user} is logged in` });
+    const accessToken = jwt.sign(
+      { username: foundUser.username },
+      process.env.ACCESS_TOKEN_SECRETS,
+      {
+        expiresIn: "30s",
+      }
+    );
+    const refreshToken = jwt.sign(
+      { username: foundUser.username },
+      process.env.REFRESH_TOKEN_SECRET,
+      {
+        expiresIn: "60m",
+      }
+    );
+    const otherUsers = usersDB.users.filter(
+      (person) => person.username !== foundUser.username
+    );
+    const curUser = { ...foundUser, refreshToken };
+    usersDB.setUsers([...otherUsers, curUser]);
+    await fsPromises.writeFile(
+      path.join(__dirname, "..", "model", "users.json"),
+      JSON.stringify(usersDB.users)
+    );
+    // sending the refresh token as a http onyl for security
+    res.cookie("jwt", refreshToken, {
+      httpOnly: true,
+      maxAge: 20 * 60 * 60 * 1000,
+    });
+    return res.json({ accessToken });
   }
   return res.status(401).json({ message: "password not correct" });
 };

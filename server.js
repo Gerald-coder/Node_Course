@@ -8,6 +8,7 @@ const { logger } = require("./middleware/logEvent");
 const cors = require("cors");
 const errorHander = require("./middleware/errorLog");
 const corsOptions = require("./config/corOption");
+const veryftJwt = require("./middleware/verifyJWT");
 
 // custom middleware
 app.use(logger);
@@ -25,9 +26,10 @@ app.use("/subdir", express.static(path.join(__dirname, "/public")));
 // routers
 app.use("/", require("./routes/root"));
 app.use("/subdir", require("./routes/subdir"));
-app.use("/employees", require("./routes/api/employees"));
 app.use("/users", require("./routes/Users"));
 app.use("/login", require("./routes/auth"));
+app.use(veryftJwt);
+app.use("/employees", require("./routes/api/employees"));
 
 // app.get(/a/, (req, res) => {
 //   res.sendFile("Any.html");

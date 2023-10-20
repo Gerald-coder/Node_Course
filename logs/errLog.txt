@@ -29,3 +29,4 @@
 2023/10/17	 a592ccf8-1da6-4efc-a62d-79214aa50666 	 TypeError: Cannot read properties of undefined (reading 'firstname') 
 2023/10/17	 a5fdf56b-2f3a-4d8d-857b-9bc33de9eec0 	 Error: Cannot set headers after they are sent to the client 
 2023/10/17	 ac34117b-6eef-41a9-bcf8-31cbe8c5710a 	 TypeError: Cannot set properties of undefined (setting 'lastname') 
+2023/10/20	 a6d6d723-39ab-428b-828c-8509aefc577e 	 Error: Cannot set headers after they are sent to the client 
