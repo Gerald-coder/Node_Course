@@ -9,6 +9,7 @@ const cors = require("cors");
 const errorHander = require("./middleware/errorLog");
 const corsOptions = require("./config/corOption");
 const veryftJwt = require("./middleware/verifyJWT");
+const cookieParser = require("cookie-parser");
 
 // custom middleware
 app.use(logger);
@@ -16,6 +17,9 @@ app.use(logger);
 // CROSS ORIGIN RESOURCE SHARING
 
 app.use(cors(corsOptions));
+
+// middleware for cookies
+app.use(cookieParser());
 
 // built in middleware
 app.use(express.urlencoded({ extended: false }));
@@ -28,6 +32,7 @@ app.use("/", require("./routes/root"));
 app.use("/subdir", require("./routes/subdir"));
 app.use("/users", require("./routes/Users"));
 app.use("/login", require("./routes/auth"));
+app.use("/refresh", require("./routes/refresh"));
 app.use(veryftJwt);
 app.use("/employees", require("./routes/api/employees"));
 

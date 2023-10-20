@@ -30,3 +30,25 @@
 2023/10/17	 a5fdf56b-2f3a-4d8d-857b-9bc33de9eec0 	 Error: Cannot set headers after they are sent to the client 
 2023/10/17	 ac34117b-6eef-41a9-bcf8-31cbe8c5710a 	 TypeError: Cannot set properties of undefined (setting 'lastname') 
 2023/10/20	 a6d6d723-39ab-428b-828c-8509aefc577e 	 Error: Cannot set headers after they are sent to the client 
+2023/10/20	 9c379438-7ec3-4263-b42a-94e1d5a382dd 	 SyntaxError: Unexpected token e in JSON at position 0 
+2023/10/20	 591cc37e-d853-4fb6-9f8c-f8f4e5297464 	 SyntaxError: Unexpected token e in JSON at position 0 
+2023/10/20	 10000f12-9f15-4d85-aabd-48c810b40c63 	 TypeError: Cannot destructure property 'cookies' of 'req.cookies' as it is undefined. 
+2023/10/20	 5b034647-55cc-49e6-b6e2-84515bdf858c 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 6df44383-e6fc-4704-8987-a7b771c2692a 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 16d1a540-23ca-4851-8620-0dc8001cb66a 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 d325327d-9c2c-40df-bac5-d54f8a8f4c85 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 e868c901-267a-4177-a4e5-4803d82378ab 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 f050c8b4-6236-4e8b-8050-d1600caa5189 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 d794d714-1014-4da1-a49a-266da456df90 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 34a92fdc-0b0f-46ee-a196-ba3cb8844409 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 a4885a0e-550b-479d-83fc-a825a7432e22 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 c1697402-ad3e-4cc4-a802-4b31bb3650cd 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 78c956a8-4215-4768-8569-76ebdef0368c 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 ae0d9189-7a1c-4c17-b267-301b6e15ebc9 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 03cc18eb-91eb-49ca-a337-53bf423c27c2 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 472b09d2-98a8-400b-866d-82214d02cf55 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 fd57697b-5517-462b-9185-390f989ee6c8 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 93f6a226-bbe3-4687-803e-7c40614ce30c 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 116222be-4f46-42d8-9edf-09135fd88956 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 5f571548-f766-4f8e-a715-f396cc2cc8a1 	 Error: invalid expiresIn option for string payload 
+2023/10/20	 1ecec3cb-ba6c-4e55-9342-bf89e015a3f5 	 Error: invalid expiresIn option for string payload 

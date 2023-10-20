@@ -34,7 +34,7 @@ const handleLogin = async (req, res) => {
       { username: foundUser.username },
       process.env.REFRESH_TOKEN_SECRET,
       {
-        expiresIn: "60m",
+        expiresIn: "1d",
       }
     );
     const otherUsers = usersDB.users.filter(
@@ -46,14 +46,13 @@ const handleLogin = async (req, res) => {
       path.join(__dirname, "..", "model", "users.json"),
       JSON.stringify(usersDB.users)
     );
-    // sending the refresh token as a http onyl for security
+    // sending the refresh token as a http only for security
     res.cookie("jwt", refreshToken, {
       httpOnly: true,
-      maxAge: 20 * 60 * 60 * 1000,
+      maxAge: 24 * 60 * 60 * 1000,
     });
-    return res.json({ accessToken });
-  }
-  return res.status(401).json({ message: "password not correct" });
+    res.json({ accessToken });
+  } else return res.status(401).json({ message: "password not correct" });
 };
 
 module.exports = handleLogin;
