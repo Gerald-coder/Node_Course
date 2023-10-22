@@ -6,6 +6,8 @@ const data = {
 };
 
 const getAllEmployees = (req, res) => {
+  console.log("req header", req.headers); //
+  console.log("res header", res.header()); //
   res.json(data.employees);
 };
 

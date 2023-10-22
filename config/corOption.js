@@ -1,16 +1,15 @@
-const whiteList = [
-  "www.mysite.com",
-  "http://localhost:3400",
-  "http://localhost:5173",
-  "http://127.0.0.1:5500",
-  "https://www.google.com",
-];
+const allowedOrigins = require("./allowedOrigins");
+
 const corsOptions = {
   origin: (origin, callback) => {
-    if (whiteList.indexOf(origin) !== -1 || !origin) {
+    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     } else {
-      callback(new Error("gerry, you have got a cors error"));
+      callback(
+        new Error(
+          "gerry, you have got a cors error, you are requesting from a wrong location"
+        )
+      );
     }
   },
   optionsSucessStatus: 200,

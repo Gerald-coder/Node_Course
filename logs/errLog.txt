@@ -52,3 +52,5 @@
 2023/10/20	 116222be-4f46-42d8-9edf-09135fd88956 	 Error: invalid expiresIn option for string payload 
 2023/10/20	 5f571548-f766-4f8e-a715-f396cc2cc8a1 	 Error: invalid expiresIn option for string payload 
 2023/10/20	 1ecec3cb-ba6c-4e55-9342-bf89e015a3f5 	 Error: invalid expiresIn option for string payload 
+2023/10/22	 9439ba29-b8e7-415e-8992-5fbf6bb1b90b 	 TypeError: allowedOrigins.indexOf is not a function 
+2023/10/22	 e5048b71-5a14-4a2e-82e8-26e83252dd5d 	 TypeError: allowedOrigins.indexOf is not a function 

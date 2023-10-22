@@ -10,12 +10,15 @@ const errorHander = require("./middleware/errorLog");
 const corsOptions = require("./config/corOption");
 const veryftJwt = require("./middleware/verifyJWT");
 const cookieParser = require("cookie-parser");
+const credentials = require("./middleware/credentials");
 
 // custom middleware
 app.use(logger);
 
-// CROSS ORIGIN RESOURCE SHARING
+//ACESS CONTROL ALLOWED ORIGIN middleware
+app.use(credentials);
 
+// CROSS ORIGIN RESOURCE SHARING
 app.use(cors(corsOptions));
 
 // middleware for cookies
@@ -33,6 +36,7 @@ app.use("/subdir", require("./routes/subdir"));
 app.use("/users", require("./routes/Users"));
 app.use("/login", require("./routes/auth"));
 app.use("/refresh", require("./routes/refresh"));
+app.use("/logout", require("./routes/logout"));
 app.use(veryftJwt);
 app.use("/employees", require("./routes/api/employees"));
 
