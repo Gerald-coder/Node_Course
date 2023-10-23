@@ -23,8 +23,10 @@ const handleLogin = async (req, res) => {
   const match = await bcrypt.compare(pwd, foundUser.password);
   if (match) {
     // create jwt
+
+    const roles = Object.values(foundUser.roles);
     const accessToken = jwt.sign(
-      { username: foundUser.username },
+      { UserInfo: { username: foundUser.username, roles: roles } },
       process.env.ACCESS_TOKEN_SECRETS,
       {
         expiresIn: "30s",
@@ -50,7 +52,7 @@ const handleLogin = async (req, res) => {
     res.cookie("jwt", refreshToken, {
       httpOnly: true,
       sameSite: "none",
-      secure: true,
+      // secure: true,  // this is removed because thunder client will not get the cookies for a secure connection
       maxAge: 24 * 60 * 60 * 1000,
     });
     res.json({ accessToken });

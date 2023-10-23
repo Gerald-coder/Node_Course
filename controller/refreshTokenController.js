@@ -20,13 +20,15 @@ const refreshTokenController = (req, res) => {
 
   if (!foundUser)
     return res.status(403).json({ message: "no matching RF token" });
+
+  const roles = Object.values(foundUser.roles);
   jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET, (err, user) => {
     if (err || user.username !== foundUser.username)
       return res
         .status(403)
         .json({ message: "refresh token seems to be tampered with" });
     const accessToken = jwt.sign(
-      { username: user.username },
+      { UserInfo: { username: user.username, roles: roles } },
       process.env.ACCESS_TOKEN_SECRETS,
       { expiresIn: "30s" }
     );

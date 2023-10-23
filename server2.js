@@ -2,11 +2,11 @@ const http = require("http");
 const fs = require("fs");
 const fsPromises = require("fs").promises;
 const path = require("path");
-const logEvents = require("./logEvent");
+const logEvents = require("./middleware/logEvent");
 require("dotenv").config();
 const EventEmitter = require("events");
 
-const PORT = process.env.PORT || 3100;
+const PORT2 = process.env.PORT2 || 3100;
 class Emitter extends EventEmitter {}
 const MyEmitter = new Emitter();
 MyEmitter.on("server", (msg, file) => logEvents(msg, file));
@@ -121,9 +121,17 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(PORT, () => console.log(`listening to the port ${PORT}`));
+server.listen(PORT2, () => console.log(`listening to the port ${PORT2}`));
 
 process.on("uncaughtException", (err) => {
   console.error(`the error is ${err}`);
   process.exit();
 });
+
+const roles = [2001, 2002, 2003];
+const rolesArrays = [2000, 2004, 2002];
+
+const result = roles
+  .map((role) => rolesArrays.includes(role))
+  .find((role) => role === true);
+console.log(result);

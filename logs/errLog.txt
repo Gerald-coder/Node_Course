@@ -54,3 +54,8 @@
 2023/10/20	 1ecec3cb-ba6c-4e55-9342-bf89e015a3f5 	 Error: invalid expiresIn option for string payload 
 2023/10/22	 9439ba29-b8e7-415e-8992-5fbf6bb1b90b 	 TypeError: allowedOrigins.indexOf is not a function 
 2023/10/22	 e5048b71-5a14-4a2e-82e8-26e83252dd5d 	 TypeError: allowedOrigins.indexOf is not a function 
+2023/10/23	 b10c3dec-47ee-48c6-af67-20bd13f27618 	 TypeError: authHeader?.StartsWith is not a function 
+2023/10/23	 0caa8811-bdc7-4b54-b730-f3738491767b 	 TypeError: authHeader?.StartsWith is not a function 
+2023/10/23	 564effc8-9131-436a-91a1-ce95ecede10c 	 TypeError: authHeader?.StartsWith is not a function 
+2023/10/23	 66a8a8e6-7d71-44ca-8cd9-726c11fa6baf 	 TypeError: authHeader?.StartsWith is not a function 
+2023/10/23	 fa6bbd02-c068-472b-8869-7d65321b17a8 	 Error: Cannot set headers after they are sent to the client 
