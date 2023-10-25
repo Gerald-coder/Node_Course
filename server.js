@@ -11,6 +11,11 @@ const corsOptions = require("./config/corOption");
 const veryftJwt = require("./middleware/verifyJWT");
 const cookieParser = require("cookie-parser");
 const credentials = require("./middleware/credentials");
+const mongoose = require("mongoose");
+const connectDB = require("./config/dbConn");
+
+// conecting to db
+connectDB();
 
 // custom middleware
 app.use(logger);
@@ -93,4 +98,7 @@ app.all("*", (req, res) => {
 
 app.use(errorHander);
 
-app.listen(PORT, () => console.log(`listening to PORT ${PORT}`));
+mongoose.connection.once("open", () => {
+  console.log("connection created");
+  app.listen(PORT, () => console.log(`listening to PORT ${PORT}`));
+});
