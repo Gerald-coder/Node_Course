@@ -561,3 +561,12 @@
 2023/10/23	 735f69b7-2a74-448a-8910-0c652e5fbb38 	 /login 	 GET undefined 
 2023/10/23	 7784d79a-0f2f-4619-90d0-4711e1c11807 	 /refresh 	 GET undefined 
 2023/10/23	 4f59aa26-89c3-42ea-afbd-2ff4f7302406 	 /refresh 	 GET undefined 
+2023/10/26	 e1d78b51-7775-4918-8ac3-d742e22e1782 	 /register 	 POST undefined 
+2023/10/26	 dcd0db12-a52b-4f87-9a35-692c9ddcf039 	 /register 	 POST undefined 
+2023/10/26	 8049c56f-501f-4edc-bf8a-7ece9e47e0fc 	 /register 	 POST undefined 
+2023/10/26	 2391b262-3bcd-4440-a0b0-fbf31f02a5e4 	 /register 	 POST undefined 
+2023/10/26	 33fb97e0-01f6-4d95-ba91-37be53e80f26 	 /register 	 POST undefined 
+2023/10/26	 194f8a1d-c2b8-4343-ab83-cd5bbfb8db32 	 /register 	 POST undefined 
+2023/10/26	 702b6ad4-e537-4cbe-ac45-8406add469bb 	 /register 	 POST undefined 
+2023/10/26	 7dc7dea5-d430-4dd7-bb73-4e5e75d9eee5 	 /employees 	 POST undefined 
+2023/10/26	 582fba4d-855a-42db-b2fb-b5a0539cf7fc 	 /register 	 POST undefined 
