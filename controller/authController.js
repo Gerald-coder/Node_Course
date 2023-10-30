@@ -1,11 +1,4 @@
-const usersDB = {
-  users: require("../model/users.json"),
-  setUsers: function (data) {
-    this.users = data;
-  },
-};
-const path = require("path");
-const fsPromises = require("fs").promises;
+const User = require("../model/User");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
@@ -14,7 +7,7 @@ const handleLogin = async (req, res) => {
   const { user, pwd } = req.body;
   if (!user || !pwd)
     return res.status(400).json({ messgae: "username and password required" });
-  const foundUser = usersDB.users.find((person) => person.username === user);
+  const foundUser = await User.findOne({ username: user }).exec();
   if (!foundUser)
     return res
       .status(401) //unauthorized
@@ -39,15 +32,9 @@ const handleLogin = async (req, res) => {
         expiresIn: "1d",
       }
     );
-    const otherUsers = usersDB.users.filter(
-      (person) => person.username !== foundUser.username
-    );
-    const curUser = { ...foundUser, refreshToken };
-    usersDB.setUsers([...otherUsers, curUser]);
-    await fsPromises.writeFile(
-      path.join(__dirname, "..", "model", "users.json"),
-      JSON.stringify(usersDB.users)
-    );
+    foundUser.refreshToken = refreshToken;
+    const result = await foundUser.save();
+    console.log(result);
     // sending the refresh token as a http only for security
     res.cookie("jwt", refreshToken, {
       httpOnly: true,

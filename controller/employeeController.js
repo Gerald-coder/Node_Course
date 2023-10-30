@@ -1,9 +1,4 @@
-const data = {
-  employees: require("../model/employees.json"),
-  setEmployee: function (data) {
-    this.employees = data;
-  },
-};
+const Employee = require("../model/Employee");
 
 const getAllEmployees = (req, res) => {
   console.log("req header", req.headers); //
@@ -11,7 +6,7 @@ const getAllEmployees = (req, res) => {
   res.json(data.employees);
 };
 
-const RegisterNewEmployee = (req, res) => {
+const RegisterNewEmployee = async (req, res) => {
   const { firstname, lastname } = req.body;
   if (!firstname || !lastname) {
     res.status(403).json({ message: "required user details" });
@@ -21,7 +16,10 @@ const RegisterNewEmployee = (req, res) => {
     lastname,
     id: data.employees[data.employees.length - 1].id + 1 || 1,
   };
-  data.setEmployee([...data.employees, newEm]);
+
+  const result = await Employee.create({ newEm });
+  console.log(result);
+
   res.status(201).json(data.employees);
 };
 

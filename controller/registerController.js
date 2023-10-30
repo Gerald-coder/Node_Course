@@ -12,14 +12,8 @@ const registerNewUser = async (req, res) => {
   if (duplicate) return res.sendStatus(409); // conflict
   try {
     const hashedPwd = await bcrypt.hash(pwd, 10);
-    //store new user
-    const newUser = {
-      username: user,
-      password: hashedPwd,
-      roles: { user: 2001 },
-    };
-
-    const result = await User.create({ username: user, password: pwd });
+    //create and store new user
+    const result = await User.create({ username: user, password: hashedPwd });
     console.log(result);
     res.status(201).json({ success: `new user ${user} created` });
 
