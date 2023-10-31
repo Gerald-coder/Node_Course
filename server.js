@@ -44,6 +44,7 @@ app.use("/refresh", require("./routes/refresh"));
 app.use("/logout", require("./routes/logout"));
 app.use(veryftJwt);
 app.use("/employees", require("./routes/api/employees"));
+app.use("/users", require("./routes/api/usersAPI"));
 
 // app.get(/a/, (req, res) => {
 //   res.sendFile("Any.html");
