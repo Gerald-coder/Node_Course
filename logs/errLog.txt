@@ -59,3 +59,5 @@
 2023/10/23	 564effc8-9131-436a-91a1-ce95ecede10c 	 TypeError: authHeader?.StartsWith is not a function 
 2023/10/23	 66a8a8e6-7d71-44ca-8cd9-726c11fa6baf 	 TypeError: authHeader?.StartsWith is not a function 
 2023/10/23	 fa6bbd02-c068-472b-8869-7d65321b17a8 	 Error: Cannot set headers after they are sent to the client 
+2023/10/30	 c678fce9-e79f-491c-8406-6ff57ce645cb 	 ReferenceError: data is not defined 
+2023/10/30	 0ed0bad4-bbdd-446f-bcf8-c312554ad5fc 	 ReferenceError: data is not defined 
